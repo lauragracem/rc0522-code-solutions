@@ -21,8 +21,8 @@ body {
   width: 25%;
 }
 
-.column-half {
-  width: 50%;
+.column-two-thirds {
+  width: calc(100% / 1.5);
 }
 
 img {
