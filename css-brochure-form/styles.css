@@ -1,11 +1,13 @@
-h3 {
-  color: rgb(240 111 63);
+h4 {
+  color: rgb(251 80 54);
   font-family: "Brandon Grotesque", sans-serif;
 }
 
 label {
   font-family: "Brandon Grotesque", sans-serif;
   font-size: 10px;
+  font-weight: bolder;
+  margin-left: 7px;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
 }
 
 .button {
-  background-color: rgb(240 111 63);
+  background-color: rgb(251 80 54);
   color: white;
   font-family: "Brandon Grotesque", sans-serif;
   font-size: 11px;
@@ -29,13 +31,19 @@ body {
 #select {
   background-color: rgb(240 237 237);
   font-family: "Brandon Grotesque", sans-serif;
+  border-radius: 0.2rem;
+  border-color: lightgray;
   width: 20rem;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 input {
   width: 20rem;
-  height: 2rem;
+  height: 2.5rem;
+  border-color: rgb(230 218 218 / 30%);
+  border-radius: 0.3rem;
+  border-style: groove;
+  margin-bottom: 0.5rem;
 }
 
 .buttoncontainer {
@@ -46,4 +54,5 @@ input {
 ::placeholder {
   font-family: "Brandon Grotesque", sans-serif;
   color: rgb(182 179 179);
+  text-indent: 5px;
 }
