@@ -34,9 +34,15 @@ body {
 
 input {
   width: 20rem;
+  height: 2rem;
 }
 
 .buttoncontainer {
   text-align: right;
   line-height: 2.5rem;
+}
+
+::placeholder {
+  font-family: "Brandon Grotesque", sans-serif;
+  color: rgb(182 179 179);
 }
