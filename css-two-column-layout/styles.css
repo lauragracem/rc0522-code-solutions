@@ -1,0 +1,37 @@
+.container {
+  font-family: Karla, sans-serif;
+  margin: auto 50px 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-full {
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2rem;
+  color: gray;
+}
+
+button {
+  background-color: white;
+  border-style: solid;
+  font-family: Karla, sans-serif;
+  font-size: smaller;
+  border-color: rgb(219 53 2 / 94%);
+  color: rgb(219 53 2 / 94%);
+  padding: 0.5rem 2.5rem;
+}
