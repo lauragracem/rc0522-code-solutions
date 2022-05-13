@@ -1,0 +1,51 @@
+.container {
+  font-family: Karla, sans-serif;
+  margin: auto 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-full {
+  text-align: center;
+  width: 60%;
+}
+
+.column-half {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  width: auto;
+}
+
+.column-fourth {
+  margin-top: 1.5rem;
+  width: 45%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 2rem;
+  color: gray;
+}
+
+button {
+  background-color: white;
+  border-style: solid;
+  font-family: karla, sans-serif;
+  font-size: smaller;
+  border-color: rgb(219 53 2 / 94%);
+  color: rgb(219 53 2 / 94%);
+  padding: 0.5rem 2.5rem;
+  margin-top: 3rem;
+}
