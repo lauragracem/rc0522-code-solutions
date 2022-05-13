@@ -1,6 +1,6 @@
 .container {
   font-family: Karla, sans-serif;
-  margin: auto 50px 50px;
+  margin: auto 50px;
 }
 
 .row {
@@ -11,6 +11,19 @@
 
 .column-full {
   text-align: center;
+  width: 60%;
+}
+
+.column-half {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  width: auto;
+}
+
+.column-fourth {
+  margin-top: 1.5rem;
+  width: 45%;
 }
 
 h1 {
@@ -29,9 +42,10 @@ p {
 button {
   background-color: white;
   border-style: solid;
-  font-family: Karla, sans-serif;
+  font-family: karla, sans-serif;
   font-size: smaller;
   border-color: rgb(219 53 2 / 94%);
   color: rgb(219 53 2 / 94%);
   padding: 0.5rem 2.5rem;
+  margin-top: 3rem;
 }
