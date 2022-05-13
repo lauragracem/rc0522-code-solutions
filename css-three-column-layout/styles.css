@@ -1,7 +1,42 @@
 .container {
   background-color: #3bb1ff;
+  font-family: Lato, sans-serif;
+  color: white;
+  padding: 50px 100px;
 }
 
 .row {
   display: flex;
+  justify-content: space-around;
+}
+
+.column-one-third {
+  width: calc(100%/3);
+}
+
+.column-one-third2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: rgb(226 223 223);
+  font-size: 14px;
+  text-align: center;
+  margin: 15px;
+}
+
+img {
+  height: 65px;
+  width: 65px;
 }
