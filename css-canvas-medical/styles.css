@@ -53,7 +53,7 @@
   padding-right: 7rem;
 }
 
-ul {
+.column > ul {
   display: flex;
   list-style: none;
 }
@@ -113,7 +113,7 @@ hr {
   margin-top: 5.5rem;
   margin-left: 3rem;
   line-height: 1.5rem;
-  padding: 0 36px;
+  padding: 0 32px;
 }
 
 .overlay {
@@ -126,4 +126,48 @@ hr {
   height: auto;
   background: radial-gradient(circle, rgb(50 48 49 / 30%) 10%, rgb(108 109 111 / 40%) 100%);
   margin-bottom: 0.2rem;
+}
+
+#section3 {
+  background-color: rgb(247 247 247);
+  margin-top: 2.3rem;
+}
+
+.text2 {
+  text-align: center;
+  color: gray;
+}
+
+.text2 > h4 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+}
+
+.text2 > p {
+  margin-top: -0.5rem;
+  width: 23rem;
+  line-height: 1.2rem;
+  font-size: 12px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+}
+
+.column2 > ul {
+  list-style: none;
+  color: gray;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-size: smaller;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+}
+
+.column2 {
+  padding-right: 6rem;
+  padding-left: 2.5rem;
+  text-align: center;
+}
+
+.column2 > li {
+  width: 300px;
 }
