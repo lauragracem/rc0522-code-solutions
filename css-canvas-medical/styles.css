@@ -163,6 +163,8 @@ hr {
 }
 
 .column2 {
+  display: flex;
+  justify-content: space-between;
   padding-right: 6rem;
   padding-left: 2.5rem;
   text-align: center;
@@ -170,4 +172,32 @@ hr {
 
 .column2 > li {
   width: 300px;
+}
+
+.text3 {
+  text-align: left;
+  color: gray;
+  padding-right: 9rem;
+}
+
+.text3 > h4 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+}
+
+.text3 > p {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  margin-top: -0.65rem;
+}
+
+.getstarted2 > button {
+  padding: 0 32px;
+}
+
+.getstarted2 {
+  text-align: right;
+  padding-left: 15rem;
+  width: 100%;
 }
