@@ -131,6 +131,8 @@ hr {
 #section3 {
   background-color: rgb(247 247 247);
   margin-top: 2.3rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .text2 {
@@ -152,7 +154,17 @@ hr {
   font-style: normal;
 }
 
-.column2 > ul {
+.column2 {
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+
+.colum2 > li {
+  text-align: center;
+}
+
+.text3 > ul {
   list-style: none;
   color: gray;
   font-family: Avenir, sans-serif;
@@ -160,55 +172,109 @@ hr {
   font-size: smaller;
   line-height: 2rem;
   margin-top: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.column2 {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-right: 6rem;
-  padding-left: 2.5rem;
-  text-align: center;
+.text3left {
+  padding-left: 20rem;
 }
 
-.column2 > li {
-  width: 300px;
+.text3right {
+  padding-right: 20rem;
 }
 
-.text3 {
+.text4 {
   text-align: left;
   color: gray;
+  margin-top: 0.6rem;
+  width: 100%;
+  padding-bottom: 1.5rem;
 }
 
-.text3 > h4 {
+.text4 > h4 {
   font-family: "Tiempos Headline", sans-serif;
   font-style: normal;
 }
 
-.text3 > p {
+.text4 > p {
   font-family: Avenir, sans-serif;
   font-style: normal;
   font-size: 12px;
   margin-top: -0.65rem;
 }
 
-.getstarted2 > button {
+.text4right {
+  padding-left: 22rem;
+}
+
+.text4right > button {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   padding: 0 32px;
 }
 
-.getstarted2 {
-  width: 100%;
+.text4left {
+  text-align: left;
+  padding-left: 20rem;
 }
 
-.text4 {
+.text4left > h4 {
+  position: absolute;
+  padding: 32px 0;
+}
+
+.text4left > p {
+  position: absolute;
+  padding: 32px 0;
+}
+
+#section5 {
+  background-color: rgb(83 82 82);
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.text5 {
   text-align: left;
 }
 
-.text4 > ul {
+.text5 > ul {
   list-style: none;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+}
+
+.text5 > h2 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+
+  /* padding-left: 8rem; */
+}
+
+.text5 > p {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  margin-right: 40rem;
+
+  /* padding-right: 40rem;
+  padding-left: 8rem; */
+}
+
+#section6 {
+  background-color: rgb(247 247 247);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bottomrow {
+  text-align: left;
+}
+
+.bottomrow > ul {
+  padding-left: 0;
+}
+
+.bottomrow > ul > li {
+  padding: 0 2rem;
 }
