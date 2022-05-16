@@ -235,6 +235,10 @@ hr {
   padding-bottom: 4rem;
 }
 
+/* .column3 {
+  max-width: calc(100%/4);
+} */
+
 .text5 {
   text-align: left;
 }
@@ -248,17 +252,19 @@ hr {
 .text5 > h2 {
   font-family: "Tiempos Headline", sans-serif;
   font-style: normal;
-
-  /* padding-left: 8rem; */
+  padding-right: 40rem;
+  padding-left: 8rem;
 }
 
 .text5 > p {
   font-family: Avenir, sans-serif;
   font-style: normal;
-  margin-right: 40rem;
 
-  /* padding-right: 40rem;
-  padding-left: 8rem; */
+  /* margin-right: 40rem;
+  margin-left: 20rem; */
+
+  padding-right: 40rem;
+  padding-left: 8rem;
 }
 
 #section6 {
