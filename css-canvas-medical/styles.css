@@ -78,6 +78,10 @@ hr {
   margin-bottom: 40px;
 }
 
+#section2 {
+  max-width: 100%;
+}
+
 .picture > img {
   height: auto;
 }
@@ -193,6 +197,10 @@ hr {
   padding-bottom: 1.5rem;
 }
 
+.column2 > .text4 {
+  max-width: 100%;
+}
+
 .text4 > h4 {
   font-family: "Tiempos Headline", sans-serif;
   font-style: normal;
@@ -206,28 +214,29 @@ hr {
 }
 
 .text4right {
-  padding-left: 22rem;
+  padding-left: 30rem;
+  padding-right: 20rem;
+  max-width: 50%;
 }
 
-.text4right > button {
+.column2 > .text4right > button {
   position: absolute;
   padding: 0 32px;
+  margin: 0;
 }
 
 .text4left {
   text-align: left;
-  padding-left: 20rem;
+  max-width: 50%;
+  padding-left: 15rem;
 }
 
-.text4left > h4 {
-  position: absolute;
-  padding: 32px 0;
+/* .text4left > h4 {
+   padding: 32px 0;
 }
 
 .text4left > p {
-  position: absolute;
-  padding: 32px 0;
-}
+  padding: 32px 0; */
 
 #section5 {
   background-color: rgb(83 82 82);
