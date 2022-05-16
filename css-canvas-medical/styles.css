@@ -215,13 +215,13 @@ hr {
 
 .text4right {
   padding-left: 30rem;
-  padding-right: 20rem;
+  padding-right: 24rem;
   max-width: 50%;
 }
 
-.column2 > .text4right > button {
+.column2 > .text4 > button {
   position: absolute;
-  padding: 0 32px;
+  padding: 0 40px;
   margin: 0;
 }
 
