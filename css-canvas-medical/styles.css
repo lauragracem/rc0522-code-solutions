@@ -1,0 +1,291 @@
+.container {
+  max-width: 100%;
+  margin: 0 8rem;
+}
+
+.section1 {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  position: relative;
+}
+
+.navi-logo {
+  width: 30rem;
+  font-size: 22px;
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  src: url(""TiemposHeadline-Regular.woff2"") format(""woff2"");
+  color: rgb(54 72 104);
+}
+
+.navi-logo > h1 {
+  padding-left: 7rem;
+  font-size: larger;
+  letter-spacing: 2px;
+}
+
+.navi {
+  display: flex;
+}
+
+.navi > li {
+  width: 7rem;
+  text-align: center;
+  color: rgb(193 191 191);
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: smaller;
+  src: url(""avenir.woff2"") format(""woff2"");
+  margin-top: 15px;
+}
+
+.contact {
+  padding-right: 7rem;
+}
+
+.column > ul {
+  display: flex;
+  list-style: none;
+}
+
+button {
+  color: white;
+  background-color: rgb(54 72 104);
+  border-radius: 2.5px;
+  border-style: hidden;
+  padding: 0 15px;
+  margin-top: 20px;
+  height: 35px;
+  font-size: 12px;
+}
+
+hr {
+  border: 1px solid rgb(242 240 240);
+  position: relative;
+  width: 100%;
+  margin-top: -0.9rem;
+  margin-bottom: 40px;
+}
+
+#section2 {
+  max-width: 100%;
+}
+
+.picture > img {
+  height: auto;
+}
+
+.text > h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.text > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: white;
+  margin-top: 5.5rem;
+  margin-left: 3rem;
+  line-height: 1.5rem;
+  width: 50%;
+}
+
+.text > button {
+  position: absolute;
+  left: 0;
+  bottom: 3.5rem;
+  color: white;
+  margin-top: 5.5rem;
+  margin-left: 3rem;
+  line-height: 1.5rem;
+  padding: 0 32px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  background: radial-gradient(circle, rgb(50 48 49 / 30%) 10%, rgb(108 109 111 / 40%) 100%);
+  margin-bottom: 0.2rem;
+}
+
+#section3 {
+  background-color: rgb(247 247 247);
+  margin-top: 2.3rem;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.text2 {
+  text-align: center;
+  color: gray;
+}
+
+.text2 > h4 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+}
+
+.text2 > p {
+  margin-top: -0.5rem;
+  width: 23rem;
+  line-height: 1.2rem;
+  font-size: 12px;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+}
+
+.column2 {
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+
+.colum2 > li {
+  text-align: center;
+}
+
+.text3 > ul {
+  list-style: none;
+  color: gray;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-size: smaller;
+  line-height: 2rem;
+  margin-top: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.text3left {
+  padding-left: 20rem;
+}
+
+.text3right {
+  padding-right: 20rem;
+}
+
+.text4 {
+  text-align: left;
+  color: gray;
+  margin-top: 0.6rem;
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.column2 > .text4 {
+  max-width: 100%;
+}
+
+.text4 > h4 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+}
+
+.text4 > p {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  margin-top: -0.65rem;
+}
+
+.text4right {
+  padding-left: 30rem;
+  padding-right: 24rem;
+  max-width: 50%;
+}
+
+.column2 > .text4 > button {
+  position: absolute;
+  padding: 0 40px;
+  margin: 0;
+}
+
+.text4left {
+  text-align: left;
+  max-width: 50%;
+  padding-left: 15rem;
+}
+
+#section5 {
+  background-color: rgb(83 82 82);
+  color: white;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.column3 {
+  width: 50%;
+}
+
+.text5 {
+  text-align: left;
+}
+
+.text5 > ul {
+  list-style: none;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  width: 20%;
+  line-height: 2rem;
+}
+
+.text5 > h2 {
+  font-family: "Tiempos Headline", sans-serif;
+  font-style: normal;
+  padding-left: 15rem;
+}
+
+.text5 > p {
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  padding-right: 15rem;
+  padding-left: 15rem;
+}
+
+#section6 {
+  background-color: rgb(247 247 247);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.bottomrow {
+  text-align: left;
+  margin-left: 0;
+  margin-right: 45rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  color: gray;
+}
+
+.bottomrow > ul {
+  padding-left: 0;
+}
+
+.bottomrow > ul > li {
+  padding: 0 2rem;
+}
