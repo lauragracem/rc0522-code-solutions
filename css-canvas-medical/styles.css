@@ -1,6 +1,6 @@
 .container {
   max-width: 100%;
-  margin: 0 9rem;
+  margin: 0 8rem;
 }
 
 .section1 {
@@ -231,13 +231,6 @@ hr {
   padding-left: 15rem;
 }
 
-/* .text4left > h4 {
-   padding: 32px 0;
-}
-
-.text4left > p {
-  padding: 32px 0; */
-
 #section5 {
   background-color: rgb(83 82 82);
   color: white;
@@ -257,21 +250,21 @@ hr {
   list-style: none;
   font-family: Avenir, sans-serif;
   font-style: normal;
-  width: 25%;
+  width: 20%;
   line-height: 2rem;
 }
 
 .text5 > h2 {
   font-family: "Tiempos Headline", sans-serif;
   font-style: normal;
-  padding-left: 4rem;
+  padding-left: 15rem;
 }
 
 .text5 > p {
   font-family: Avenir, sans-serif;
   font-style: normal;
   padding-right: 15rem;
-  padding-left: 4rem;
+  padding-left: 15rem;
 }
 
 #section6 {
@@ -282,6 +275,8 @@ hr {
 
 .bottomrow {
   text-align: left;
+  margin-left: 0;
+  margin-right: 45rem;
 }
 
 .bottomrow > ul {
