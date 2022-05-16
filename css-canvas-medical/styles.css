@@ -277,6 +277,9 @@ hr {
   text-align: left;
   margin-left: 0;
   margin-right: 45rem;
+  font-family: Avenir, sans-serif;
+  font-style: normal;
+  color: gray;
 }
 
 .bottomrow > ul {
