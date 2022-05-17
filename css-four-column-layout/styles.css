@@ -1,0 +1,61 @@
+.container {
+  background-color: rgb(244 244 244);
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-family: Barlow, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.row {
+  width: 100%;
+}
+
+.row > .column4 > .screen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.column4 > .screen > img {
+  width: 20%;
+  height: auto;
+}
+
+.column4 > .icons > img {
+  width: 5%;
+  height: auto;
+  padding-left: 0.5rem;
+}
+
+.row > .column4 > .icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 2.5rem;
+  margin-right: 3rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.headings {
+  font-family: Barlow, sans-serif;
+  font-weight: bold;
+  padding-right: 2.4rem;
+  padding-left: 0.3rem;
+}
+
+.text {
+  font-family: barlow, sans-serif;
+  line-height: 2rem;
+  padding-right: 5.1rem;
+  padding-left: 3.2rem;
+}
