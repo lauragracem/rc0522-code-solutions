@@ -1,0 +1,44 @@
+.container {
+  font-family: "DM Sans", sans-serif;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.rowproducts {
+  padding-left: 3rem;
+}
+
+.column-5 {
+  display: flex;
+  justify-content: center;
+  width: calc(100%/5);
+}
+
+img {
+  width: 80%;
+  height: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+mark {
+  background-color: rgb(255 242 227);
+}
+
+p > span {
+  text-decoration: line-through;
+}
+
+.line {
+  border-right: 20px red;
+  height: 100px;
+}
+
+.text4 > img {
+  min-height: 25rem;
+  min-width: 18rem;
+}
