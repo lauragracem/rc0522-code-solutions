@@ -33,6 +33,11 @@ p > span {
   text-decoration: line-through;
 }
 
+.line {
+  border-right: 20px red;
+  height: 100px;
+}
+
 .text4 > img {
   min-height: 25rem;
   min-width: 18rem;
