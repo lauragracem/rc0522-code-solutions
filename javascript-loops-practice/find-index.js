@@ -8,3 +8,12 @@ function findIndex(array, value) {
   }
   return -1;
 }
+
+/*
+Define a function and name it findIndex that takes two parameters named array and value.
+Write a for loop--set the initalization to 0, the condition to i is less than
+ the length of array, set the counter to increment.
+Write and 'if' statement--newValue is strictly equal to value.
+Return i.
+Return negative 1.
+*/
