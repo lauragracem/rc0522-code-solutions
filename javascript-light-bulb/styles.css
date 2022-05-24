@@ -1,0 +1,34 @@
+#container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f4e3;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #f9e285;
+  box-shadow: 0 0 2rem #f9e285;
+}
+
+.click-button.on {
+  background-color: #f3d069;
+}
+
+.click-button.off {
+  background-color: rgb(40 40 40);
+  box-shadow: none;
+}
+
+#container.off {
+  background-color: black;
+}
