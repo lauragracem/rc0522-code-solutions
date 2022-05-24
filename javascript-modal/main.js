@@ -4,13 +4,14 @@ $modalBtn.addEventListener('click', cornerClick);
 var $noBtn = document.querySelector('.no-thanks');
 $noBtn.addEventListener('click', cornerClick);
 
+var $change = document.querySelector('.background');
 var click = 0;
 
 function cornerClick(event) {
   click++;
   if (click % 2 !== 0) {
-    $modalBtn.className = 'background';
+    $change.className = 'background';
   } else if (click % 2 === 0) {
-    $modalBtn.className = 'background2';
+    $change.className = 'background unhidden';
   }
 }
