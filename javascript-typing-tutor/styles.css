@@ -17,8 +17,8 @@ p {
   font-weight: bold;
 }
 
-span {
-  border-bottom: solid black;
+.current {
+  border-bottom: 5px solid black;
 }
 
 .correct {
