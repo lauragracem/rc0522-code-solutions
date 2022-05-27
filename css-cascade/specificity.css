@@ -1,11 +1,19 @@
-.first-class {
-  color: goldenrod;
+#timbl {
+  color: red;
 }
 
-.different-class {
-  color: indigo;
+#verou {
+  color: black !important;
 }
 
-.other-class {
-  color: chartreuse;
+.bio {
+  color: green;
+}
+
+p {
+  color: orange;
+}
+
+* {
+  color: blue;
 }
