@@ -11,6 +11,3 @@ function takeRight(array, count) {
   }
   return newArray;
 }
-
-// count = the number of items from the end of the array
-// returned in the order it was inputted.
