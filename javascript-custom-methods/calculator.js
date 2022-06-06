@@ -1,13 +1,4 @@
 /* exported calculator */
-// var doggo = {
-//   bork: function () {
-//     return 'bork! bork! bork!';
-//   },
-//   lick: function () {
-//     return 'mlem';
-//   }
-// };
-
 var calculator = {
   add: function (x, y) {
     return (x + y);
