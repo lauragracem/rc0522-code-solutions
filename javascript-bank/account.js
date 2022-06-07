@@ -30,19 +30,15 @@ Account.prototype.withdraw = function (amount) {
 
 };
 
-// Account.prototype.getBalance = function () {
-//   var balance = 0;
-//   for (var i = 0; i < this.transactions.length; i++) {
-//     var transaction = this.transactions[i];
-//     if (transaction.type === 'withdrawal') {
-//       balance -= transaction.amount;
-//     } else if (transaction.type === 'deposit') {
-//       balance += transaction.amount;
-//     }
-//   }
-//   if (balance <= -1) {
-//     return false;
-//   } else {
-//     return true;
-//   }
-// };
+Account.prototype.getBalance = function () {
+  var balance = 0;// total money
+  for (var i = 0; i < this.transactions.length; i++) {
+    var transaction = this.transactions[i];
+    if (transaction.type === 'deposit') {
+      balance += transaction.amount; // adding money
+    } else {
+      balance -= transaction.amount; // taking money
+    }
+  }
+  return balance;
+};
