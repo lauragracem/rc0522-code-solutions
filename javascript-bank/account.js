@@ -18,7 +18,16 @@ Account.prototype.deposit = function (amount) {
 };
 
 Account.prototype.withdraw = function (amount) {
-  this.transactions.push(new Transaction('withdrawal', amount));
+  if (Number.isInteger(amount)) {
+    if (amount > 0) {
+      this.transactions.push(new Transaction('withdrawal', amount));
+      return true;
+    }
+    return false;
+  } else {
+    return false;
+  }
+
 };
 
 // Account.prototype.getBalance = function () {
