@@ -36,10 +36,11 @@
   position: absolute;
 }
 
-.second,
-.third,
-.fourth,
-.fifth {
+.first.hidden,
+.second.hidden,
+.third.hidden,
+.fourth.hidden,
+.fifth.hidden {
   visibility: hidden;
   position: absolute;
 }
