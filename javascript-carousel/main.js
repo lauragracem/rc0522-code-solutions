@@ -18,6 +18,11 @@ function dotOne() {
   $third.className = 'third hidden';
   $fourth.className = 'fourth hidden';
   $fifth.className = 'fifth hidden';
+  $dot1.className = 'fa-regular fa-circle on';
+  $dot2.className = 'fa-regular fa-circle';
+  $dot3.className = 'fa-regular fa-circle';
+  $dot4.className = 'fa-regular fa-circle';
+  $dot5.className = 'fa-regular fa-circle';
 }
 
 $dot2.addEventListener('click', dotTwo);
@@ -27,6 +32,11 @@ function dotTwo() {
   $third.className = 'third hidden';
   $fourth.className = 'fourth hidden';
   $fifth.className = 'fifth hidden';
+  $dot1.className = 'fa-regular fa-circle';
+  $dot2.className = 'fa-regular fa-circle on';
+  $dot3.className = 'fa-regular fa-circle';
+  $dot4.className = 'fa-regular fa-circle';
+  $dot5.className = 'fa-regular fa-circle';
 
 }
 
@@ -37,6 +47,11 @@ function dotThree() {
   $third.className = 'third';
   $fourth.className = 'fourth hidden';
   $fifth.className = 'fifth hidden';
+  $dot1.className = 'fa-regular fa-circle';
+  $dot2.className = 'fa-regular fa-circle';
+  $dot3.className = 'fa-regular fa-circle on';
+  $dot4.className = 'fa-regular fa-circle';
+  $dot5.className = 'fa-regular fa-circle';
 }
 
 $dot4.addEventListener('click', dotFourth);
@@ -46,6 +61,11 @@ function dotFourth() {
   $third.className = 'third hidden';
   $fourth.className = 'fourth';
   $fifth.className = 'fifth hidden';
+  $dot1.className = 'fa-regular fa-circle';
+  $dot2.className = 'fa-regular fa-circle';
+  $dot3.className = 'fa-regular fa-circle';
+  $dot4.className = 'fa-regular fa-circle on';
+  $dot5.className = 'fa-regular fa-circle';
 }
 
 $dot5.addEventListener('click', dotFifth);
@@ -55,6 +75,11 @@ function dotFifth() {
   $third.className = 'third hidden';
   $fourth.className = 'fourth hidden';
   $fifth.className = 'fifth';
+  $dot1.className = 'fa-regular fa-circle';
+  $dot2.className = 'fa-regular fa-circle';
+  $dot3.className = 'fa-regular fa-circle';
+  $dot4.className = 'fa-regular fa-circle';
+  $dot5.className = 'fa-regular fa-circle on';
 }
 
 $leftArrow.addEventListener('click', goBack);

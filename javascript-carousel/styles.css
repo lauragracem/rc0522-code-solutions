@@ -54,6 +54,7 @@
   font-size: larger;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  background-color: none;
 }
 
 .fa-regular.fa-circle.on {
