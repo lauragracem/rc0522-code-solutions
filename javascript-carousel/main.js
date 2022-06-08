@@ -87,26 +87,51 @@ function goBack() {
   if ($first.className === 'first') {
     $first.className = 'first hidden';
     $fifth.className = 'fifth';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle on';
     return;
   }
   if ($fifth.className === 'fifth') {
     $fifth.className = 'fifth hidden';
     $fourth.className = 'fourth';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle on';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($fourth.className === 'fourth') {
     $fourth.className = 'fourth hidden';
     $third.className = 'third';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle on';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($third.className === 'third') {
     $third.className = 'third hidden';
     $second.className = 'second';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle on';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($second.className === 'second') {
     $second.className = 'second hidden';
     $first.className = 'first';
+    $dot1.className = 'fa-regular fa-circle on';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle';
   }
 }
 
@@ -115,25 +140,50 @@ function goForward() {
   if ($first.className === 'first') {
     $first.className = 'first hidden';
     $second.className = 'second';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle on';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($second.className === 'second') {
     $second.className = 'second hidden';
     $third.className = 'third';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle on';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($third.className === 'third') {
     $third.className = 'third hidden';
     $fourth.className = 'fourth';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle on';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($fourth.className === 'fourth') {
     $fourth.className = 'fourth hidden';
     $fifth.className = 'fifth';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle on';
+    $dot5.className = 'fa-regular fa-circle';
     return;
   }
   if ($fifth.className === 'fifth') {
     $fifth.className = 'fifth hidden';
     $first.className = 'first';
+    $dot1.className = 'fa-regular fa-circle';
+    $dot2.className = 'fa-regular fa-circle';
+    $dot3.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle on';
   }
 }
