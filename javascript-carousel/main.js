@@ -173,17 +173,19 @@ function goForward() {
     $dot1.className = 'fa-regular fa-circle';
     $dot2.className = 'fa-regular fa-circle';
     $dot3.className = 'fa-regular fa-circle';
-    $dot4.className = 'fa-regular fa-circle on';
-    $dot5.className = 'fa-regular fa-circle';
+    $dot4.className = 'fa-regular fa-circle';
+    $dot5.className = 'fa-regular fa-circle on';
     return;
   }
   if ($fifth.className === 'fifth') {
     $fifth.className = 'fifth hidden';
     $first.className = 'first';
-    $dot1.className = 'fa-regular fa-circle';
+    $dot1.className = 'fa-regular fa-circle on';
     $dot2.className = 'fa-regular fa-circle';
     $dot3.className = 'fa-regular fa-circle';
     $dot4.className = 'fa-regular fa-circle';
-    $dot5.className = 'fa-regular fa-circle on';
+    $dot5.className = 'fa-regular fa-circle';
   }
 }
+
+setInterval(goForward, 3000);
