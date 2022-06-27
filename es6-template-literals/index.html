@@ -8,18 +8,24 @@
 </head>
 <body>
   <script>
-    const address = '9200 Irvine Center Drive';
+    const number = 9200;
+    const street = 'Irvine Center Drive';
+    const address = `${number} ${street}`;
 
     console.log('LearningFuze:', address);
 
-    const bio = 'My name is Uzair Ashraf and I am 25 years old.';
+    const firstName = 'Uzair';
+    const lastName = 'Ashraf';
+    const age = 25;
+
+    const bio = `My name is ${firstName} ${lastName} and I am ${age} years old.`;
 
     console.log('Bio:', bio);
 
     const fruit = 'apple';
     const item = 'pen';
 
-    const applePen = 'applepen';
+    const applePen = `${fruit}${item}`;
 
     console.log('I have a', item);
     console.log('I have an', fruit);
