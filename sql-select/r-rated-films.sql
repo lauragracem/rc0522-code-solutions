@@ -1,1 +1,1 @@
-select "filmId", "title", "description", "length" from "genres" where "name" = 'R-rated-films';
+select "filmId", "title", "description", "length" from "films" where "rating" = 'R';
