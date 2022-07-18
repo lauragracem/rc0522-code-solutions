@@ -1,9 +1,13 @@
-const express = require('express');
-const app = express();
 const path = require('path');
+const express = require('express');
 
-const join = path.join('public', '__dirname');
+const app = express();
+const join = path.join(__dirname, 'public');
 console.log(join);
+
+const staticMiddleware = express.static(join);
+
+app.use(staticMiddleware);
 
 const staticReturn = app.use(express.static('public'));
 console.log(staticReturn);
