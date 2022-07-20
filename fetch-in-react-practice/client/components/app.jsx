@@ -18,29 +18,22 @@ export default class App extends React.Component {
       .then(response => response.json())
       .then(todos =>
         this.setState({ todos }));
-    /*
-     * Then 😉, once the response JSON is received and parsed,
-     * update state with the received todos.
-     */
   }
 
   addTodo(newTodo) {
-    /**
-    * Use fetch to send a POST request to `/api/todos`.
-    * Then 😉, once the response JSON is received and parsed,
-    *   - create a shallow copy of the todos array from state
-    *   - add the todo received from the server to the copied array
-    *   - replace the old todos array in state with the new one
-    *
-    * DO NOT MUTATE the original state array, nor any objects within it.
-    * https://reactjs.org/docs/optimizing-performance.html#the-power-of-not-mutating-data
-    *
-    * TIP: Be sure to SERIALIZE the todo object in the body with JSON.stringify()
-    * and specify the "Content-Type" header as "application/json"
-    *
-    * TIP: Use Array.prototype.concat to create a new array containing the contents
-    * of the old array, plus the object returned by the server.
-    */
+    fetch('/api/todos', {
+      method: 'POST',
+      body: JSON.stringify(newTodo),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .then(data => {
+        const todos = this.state.todos;
+        const newTodos = todos.concat(data);
+        this.setState({ todos: newTodos });
+      });
   }
 
   toggleCompleted(todoId) {
