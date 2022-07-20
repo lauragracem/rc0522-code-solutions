@@ -11,7 +11,7 @@ const pokedex = [
 
 // const numbers = [1, 2, 3, 4, 5];
 const listItems = pokedex.map(pokedex =>
-  <li key={pokedex} value={pokedex.name}>{pokedex.name}</li>
+  <li key={pokedex.number}>{pokedex.name}</li>
 );
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
