@@ -48,26 +48,35 @@ app.post('/api/auth/sign-in', (req, res, next) => {
     throw new ClientError(401, 'invalid login');
   }
 
-  const sql = `
-    SELECT
-      userId,
-      hashedPassword
-    FROM
-      users
-    WHERE
-      users.username EQUALS username`;
-  db.query(sql)
-    .then(result => {
-      const passwordMatch = argon2.verify(result.hashedPassword, password);
-      if (!userId) {
-        throw new ClientError(401, 'invalid login');
-      } else {
-        ''= passwordMatch;
-      }if (password != passwordMatch){
-        throw new ClientError(401, 'invalid login');
-      }
-    })
-    .catch(err => next(err));
+  // const sql = `
+  //   SELECT
+  //     userId,
+  //     hashedPassword
+  //   FROM
+  //     users
+  //   WHERE
+  //     users.username EQUALS username`;
+  // db.query(sql)
+  //   .then(result => {
+  //     const passwordMatch = argon2.verify(result.hashedPassword, password);
+  //     // if (!userId) {
+  //     //   throw new ClientError(401, 'invalid login');
+  //     // } else {
+  //     //   // ''= passwordMatch;
+  //     // } if (password != passwordMatch) {
+  //     //   throw new ClientError(401, 'invalid login');
+  //     // } else {
+  //     // const payload = {
+  //     //   userId: 42,
+  //     //   permissions: [
+  //     //     'drink',
+  //     //     'drive'
+  //     //   ]
+  //     // };
+  //     // const token = jwt.sign(payload, process.env.TOKEN_SECRET);
+  //   }
+  //   )
+  //   .catch(err => next(err));
   /**
    * Query the database to find the "userId" and "hashedPassword" for the "username".
    * Then, 😉
