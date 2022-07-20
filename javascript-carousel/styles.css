@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+  height: auto;
+}
+
+.container.carousel {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.arrows {
+  position: absolute;
+  font-size: 4rem;
+}
+
+.left-arrow {
+  margin-right: 55rem;
+  margin-top: 27rem;
+}
+
+.right-arrow {
+  margin-left: 65rem;
+  margin-top: -5rem;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  margin-top: 15rem;
+}
+
+.first {
+  position: absolute;
+}
+
+.first.hidden,
+.second.hidden,
+.third.hidden,
+.fourth.hidden,
+.fifth.hidden {
+  visibility: hidden;
+  position: absolute;
+}
+
+.progress {
+  position: absolute;
+  margin-top: 45rem;
+}
+
+.fa-regular.fa-circle {
+  font-size: larger;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: none;
+}
+
+.fa-regular.fa-circle.on {
+  background-color: black;
+  border-radius: 10rem;
+}
