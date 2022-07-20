@@ -15,7 +15,9 @@ export default class App extends React.Component {
 
   componentDidMount() {
     fetch('/api/todos')
-      .then(response => response.json());
+      .then(response => response.json())
+      .then(todos =>
+        this.setState({ todos }));
     /*
      * Then 😉, once the response JSON is received and parsed,
      * update state with the received todos.
