@@ -9,9 +9,6 @@ const staticMiddleware = express.static(join);
 
 app.use(staticMiddleware);
 
-const staticReturn = app.use(express.static('public'));
-console.log(staticReturn);
-
 app.listen(3000, function (err) {
   if (err) console.log('Error in server setup');
   console.log('Server listening on Port', 3000);
