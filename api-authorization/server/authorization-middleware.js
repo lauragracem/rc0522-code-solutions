@@ -2,7 +2,22 @@ const jwt = require('jsonwebtoken'); // eslint-disable-line
 const ClientError = require('./client-error'); // eslint-disable-line
 
 function authorizationMiddleware(req, res, next) {
-  /* your code here */
+  // req.get('/api/flashcards', 'X-Access-Token');
+  // const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYXV0b2RpZGFjdCIsImlhdCI6MTYwODE1NjM4Nn0.w9mORRpJ6Twlwr1pMdILyNqOyz7Auh8_rzcRUsexvy8';
+  // if (!token) {
+  //   throw new ClientError(401, 'authentication required');
+  // }
+  // const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+  // console.log(payload);
+
+  const token = req.get('X-Access-Token');
+  if (!token) {
+    throw new ClientError(401, 'authentication required');
+  }
+  const payload = jwt.verify(token, process.env.TOKEN_SECRET);
+  req.user = payload;
+  next();
+
   /**
    * Try to get the 'X-Access-Token' from the request headers.
    * If no token is provided,

@@ -76,6 +76,12 @@ app.post('/api/auth/sign-in', (req, res, next) => {
     .catch(err => next(err));
 });
 
+app.get('/api/a', (req, res, next) => {
+  res.json({
+    hello: 'world'
+  });
+});
+
 /* ⛔ Every route after this middleware requires a token! ⛔ */
 
 app.use(authorizationMiddleware);
