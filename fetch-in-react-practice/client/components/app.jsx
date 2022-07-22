@@ -37,6 +37,7 @@ export default class App extends React.Component {
   }
 
   toggleCompleted(todoId) {
+
     const todoIndex = this.state.todos.findIndex(todo => todo.id === todoId);
     const isCompleted = this.state.todos[todoIndex].isCompleted;
     const newProperty = { isCompleted: !isCompleted };
@@ -60,6 +61,7 @@ export default class App extends React.Component {
         this.setState({ todos });
       })
       .catch(err => console.error(err));
+
     /**
      * Find the index of the todo with the matching todoId in the state array.
      * Get its "isCompleted" status.
