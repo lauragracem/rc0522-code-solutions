@@ -1,0 +1,28 @@
+User can sign up
+-Client will submit input.
+-Server will receive the information from the Client, hash it and
+ send it to the database.
+-Database will store information and return the record.
+-Server will receive the new record and send a success response to the client.
+-Client will receive success and redirect user to sign in page
+
+User can sign in
+-Client will submit input.
+-Server will receive the information from the Client, query the database
+ and see if there's a matching username and password.
+-Server will send a message saying whether or not a match is found.
+-If success
+  - Server will send user data and a token
+  - Client will receive user data and token, set user state, and save token in local storage
+-If error
+  - Server will send 401 invalid login
+
+
+User can stay signed in (even if they refresh the page)
+-Client will attempt to get token from local storage
+-If token is found, Client will decode user info from token and set state
+-If no token is found, Client will set user to null
+
+User can sign out
+-Client will remove token from local storage and set user to null.
+-Client will redirect user from protected routes.
