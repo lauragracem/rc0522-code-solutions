@@ -27,28 +27,34 @@ app.post('/api/auth/sign-up', (req, res, next) => {
   /* your code starts here */
 
   try {
-    const hashedPassword = argon2.hash(password);
-    const queryString = `INSERT INTO users(
-      username, hashedPassword
-      ) VALUES(
-      '${username}', '${hashedPassword}'
-      )`;
-    db.query(queryString)
-      .then(result => {
-        if (result.rows.length === 0) {
-          throw new ClientError(401, 'invalid login');
-        }
-        const record = result.rows[0];
 
-        res.status(200).json({
-          username: record.username,
-          userId: record.userId,
-          createdAt: record.createdAt
-        });
+    argon2.hash(password)
+      .then(hashedPassword => {
+        const queryString = `INSERT INTO users(username, hashedPassword)
+          VALUES('${username}', '${hashedPassword}')`;
+
+        db.query(queryString)
+          .then(result => {
+            if (result.rows.length === 0) {
+              throw new ClientError(401, 'invalid login');
+            }
+            const record = result.rows[0];
+
+            res.status(200).json({
+              username: record.username,
+              userId: record.userId,
+              createdAt: record.createdAt
+            });
+          })
+          .catch(err => {
+            throw new ClientError(401, err);
+          });
+
       })
       .catch(err => {
         throw new ClientError(401, err);
       });
+
   } catch (err) {
     throw new ClientError(401, err);
   }
