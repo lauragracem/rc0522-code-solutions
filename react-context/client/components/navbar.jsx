@@ -1,4 +1,5 @@
 import React from 'react';
+import AppContext from '../lib/app-context';
 
 export default class Navbar extends React.Component {
   render() {
@@ -11,7 +12,7 @@ export default class Navbar extends React.Component {
             Awesome App
           </a>
           <div>
-            { user !== null &&
+            { user !== null && // logic operator working kind of like an if/ else statements
               <button className="btn btn-dark" onClick={handleSignOut}>
                 Sign out
                 <i className="ms-2 fas fa-sign-out-alt" />
@@ -33,3 +34,5 @@ export default class Navbar extends React.Component {
     );
   }
 }
+
+Navbar.contextType = AppContext;

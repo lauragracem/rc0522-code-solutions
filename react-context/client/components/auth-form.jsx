@@ -41,7 +41,7 @@ export default class AuthForm extends React.Component {
     const { action } = this.props;
     const { handleChange, handleSubmit } = this;
     const alternateActionHref = action === 'sign-up'
-      ? '#sign-in'
+      ? '#sign-in' // ternary operator. basically if/else statments
       : '#sign-up';
     const alternatActionText = action === 'sign-up'
       ? 'Sign in instead'
