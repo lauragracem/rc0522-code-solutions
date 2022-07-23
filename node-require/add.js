@@ -1,5 +1,7 @@
-function add(a, b) {
-  return a + b;
+function add(x, y) {
+  const sum = x + y;
+  return sum;
+
 }
 
 module.exports = add;
