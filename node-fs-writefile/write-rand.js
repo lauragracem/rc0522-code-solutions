@@ -1,11 +1,8 @@
 const fs = require('fs');
 
-const randomNum = Math.random();
+const data = Math.random().toString() + '\n';
 
-fs.writeFile('random.txt', randomNum + '\n', 'utf8', err => {
-  if (err) {
-    console.error(err);
-    process.exit(1);
-  }
-}
-);
+fs.writeFile('random.txt', data, 'utf8', err => {
+  if (err) throw err;
+});
+
