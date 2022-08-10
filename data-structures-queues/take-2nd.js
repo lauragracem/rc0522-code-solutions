@@ -9,7 +9,7 @@ function take2nd(queue) {
   if (get2 === undefined) {
     return get;
   }
-  queue.dequeue(get2);
+  queue.dequeue();
   queue.enqueue(get);
 
   return get2;
