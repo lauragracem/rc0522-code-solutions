@@ -2,5 +2,4 @@
 /* exported prepend */
 
 function prepend(list, value) {
-
 }
