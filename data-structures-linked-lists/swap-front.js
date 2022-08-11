@@ -1,12 +1,12 @@
 /* exported swapFront */
 
 function swapFront(list) {
-  // if (list.next === null) {
-  //   return list;
-  // }
-  // const a = list.next;
-  // const b = list.a.next;
-  // a.next = list;
-  // list.next = b;
-  // return a;
+  if (list.next === null) {
+    return list;
+  }
+  const first = list.next;
+  const second = first.next;
+  first.next = list;
+  list.next = second;
+  return first;
 }
